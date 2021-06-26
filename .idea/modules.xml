@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Demo13-InnerClass/Demo13-InnerClass.iml" filepath="$PROJECT_DIR$/Demo13-InnerClass/Demo13-InnerClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo14-UsualClass/Demo14-UsualClass.iml" filepath="$PROJECT_DIR$/Demo14-UsualClass/Demo14-UsualClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo15-File/Demo15-File.iml" filepath="$PROJECT_DIR$/Demo15-File/Demo15-File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo16-IO/Demo16-IO.iml" filepath="$PROJECT_DIR$/Demo16-IO/Demo16-IO.iml" />
     </modules>
   </component>
 </project>

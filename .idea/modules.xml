@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/Demo15-File/Demo15-File.iml" filepath="$PROJECT_DIR$/Demo15-File/Demo15-File.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo16-IO/Demo16-IO.iml" filepath="$PROJECT_DIR$/Demo16-IO/Demo16-IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo17-Exception/Demo17-Exception.iml" filepath="$PROJECT_DIR$/Demo17-Exception/Demo17-Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" filepath="$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" />
     </modules>
   </component>
 </project>

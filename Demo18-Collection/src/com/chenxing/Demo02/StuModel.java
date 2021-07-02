@@ -90,14 +90,43 @@ public class StuModel {
     /**
      * 添加学员动作
      * @param stuAdd 一个要被添加的学员信息（不包括ID）
-     * @return 成功返回 true 失败返回 false
+     *               如果是 null 结束添加
+     * @return 继续返回 true 结束返回 false
      */
     public boolean doAddStu(Student stuAdd) {
+        if(null == stuAdd)
+            return false;
         Student stu = new Student(Global.stuID++,
                 stuAdd.getName(),
                 stuAdd.getSex(),
                 stuAdd.getAge(),
                 stuAdd.getScore());
         return Global.stuList.add(stu);
+    }
+
+    /**
+     * 根据学生ID 删除学员
+     * @param delID 要删除的学生ID
+     */
+    public void doDelStuByID(int delID) {
+        for (int i = 0; i < Global.stuList.size(); i++) {
+            if (delID == Global.stuList.get(i).getId()){
+                Global.stuList.remove(i);
+                return; // 写在方法体内
+            }
+        }
+    }
+
+    /**
+     * 更新学员
+     * @param stuNew 要更新的学员信息
+     */
+    public void doUPdate(Student stuNew) {
+        for (int i = 0; i < Global.stuList.size(); i++) {
+            if (stuNew.getId() == Global.stuList.get(i).getId()) {
+                Global.stuList.set(i, stuNew);
+                return;
+            }
+        }
     }
 }

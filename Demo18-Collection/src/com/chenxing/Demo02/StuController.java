@@ -25,16 +25,39 @@ public class StuController {
                 break;
             case 2://添加
                 // 一次添加一个成员
+                // 插入多个学员 输入 over 作为学生姓名时 就不再继续添加
                 // 获取一个要添加的成员
-                Student stuAdd = StuPage.getAddStu();
+                // Student stuAdd = StuPage.getAddStu();
                 // 将要添加的学员对象传递给 Model 层来实现添加
-                boolean b = sm.doAddStu(stuAdd);
+                while(sm.doAddStu(StuPage.getAddStu()));
+                // boolean b = sm.doAddStu(stuAdd);
                 break;
             case 3://修改
-                System.out.println("修改");
+                // 获取要修改的学员ID
+                int editStuID = StuPage.getStuEditID();
+                // 通过 ID 查询出要修改的学员信息
+                ArrayList<Student> editStu = sm.getByStuID(editStuID);
+                // 在编辑页面中显示原有的学员信息 并且等待输入新的信息
+                Student stuNew = StuPage.editStu(editStu.get(0));
+                // 更新学员信息
+                sm.doUPdate(stuNew);
                 break;
             case 4://删除
-                System.out.println("删除");
+                // 获取要删除的学员ID
+                int delID = StuPage.getDelID(); // 通过 getDelID 来获取到需要删除的学员ID
+                // 输出要删除的信息
+                ArrayList<Student> delStu = sm.getByStuID(delID); // 通过 getByStuID 来处理需要删除的 学生对象（查询到该对象，并将信息以集合的形式返回）
+                // 并将该对象以集合的形式存储到 ArrayList当中
+                if(!delStu.isEmpty()){ // 判断该集合是否为空 不为空则输出
+                    StuPage.showStuList(delStu); // 输出需要删除的对象
+                    //boolean delB = StuPage.delAlert();
+                    if (StuPage.delAlert()){ // 如果 确定要删除该对象 则执行删除  否则什么都不做
+                        sm.doDelStuByID(delID); // 执行删除操作
+                        System.out.println("删除成功！");
+                    }
+                }else{
+                    StuPage.failed("学生信息不存在，删除失败！");
+                }
                 break;
             case 0://退出学员系统
                 System.out.println("退出学员系统");

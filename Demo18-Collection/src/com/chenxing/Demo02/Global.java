@@ -15,11 +15,11 @@ public class Global {
     public static ArrayList<Student> stuList = new ArrayList<>();
     public static int stuID = 1;
     public static void initStuList() {
-        stuList.add(new Student(stuID++,"Oakley","male",18,99));
-        stuList.add(new Student(stuID++,"Alisa","female",19,100));
-        stuList.add(new Student(stuID++,"Alex","male",20,97));
-        stuList.add(new Student(stuID++,"Vicky","female",15,96));
-        stuList.add(new Student(stuID++,"Old-six","male",17,95));
-        stuList.add(new Student(stuID++,"Leo","male",17,20));
+        stuList.add(new Student(stuID++,"Oakley","1",18,99));
+        stuList.add(new Student(stuID++,"Alisa","0",19,100));
+        stuList.add(new Student(stuID++,"Alex","1",20,97));
+        stuList.add(new Student(stuID++,"Vicky","0",15,96));
+        stuList.add(new Student(stuID++,"Old-six","1",17,95));
+        stuList.add(new Student(stuID++,"Leo","1",17,20));
     }
 }

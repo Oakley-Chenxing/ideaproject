@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/Demo17-Exception/Demo17-Exception.iml" filepath="$PROJECT_DIR$/Demo17-Exception/Demo17-Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" filepath="$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo19-Set/Demo19-Set.iml" filepath="$PROJECT_DIR$/Demo19-Set/Demo19-Set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo20-Generic/Demo20-Generic.iml" filepath="$PROJECT_DIR$/Demo20-Generic/Demo20-Generic.iml" />
     </modules>
   </component>
 </project>

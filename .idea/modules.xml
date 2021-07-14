@@ -22,6 +22,8 @@
       <module fileurl="file://$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" filepath="$PROJECT_DIR$/Demo18-Collection/Demo18-Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo19-Set/Demo19-Set.iml" filepath="$PROJECT_DIR$/Demo19-Set/Demo19-Set.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo20-Generic/Demo20-Generic.iml" filepath="$PROJECT_DIR$/Demo20-Generic/Demo20-Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo21-Map/Demo21-Map.iml" filepath="$PROJECT_DIR$/Demo21-Map/Demo21-Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo22-Collections/Demo22-Collections.iml" filepath="$PROJECT_DIR$/Demo22-Collections/Demo22-Collections.iml" />
     </modules>
   </component>
 </project>
